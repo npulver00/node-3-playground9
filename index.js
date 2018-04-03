@@ -8,7 +8,13 @@ app.use(bodyParser.json());
 
 app.get('/data', (req, res) => {
   res.json({
-    user: 'pretend this is meaningful data, like URLs to pictures of the simpsons',
+    someData: 'pretend this is meaningful data, like URLs to pictures of the simpsons',
+  });
+});
+
+app.get('/more-data', (req, res) => {
+  res.json({
+    moreData: 'I wish this data were protected!',
   });
 });
 
